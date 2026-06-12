@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGMA SMS | Registro de Acidente</title>
+
+    <link rel="stylesheet" href="../fazer_registro/registro.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>SIGMA</h2>
+        <span>SMS</span>
+      </div>
+
+      <nav class="menu">
+        <a href="../index.html" class="active">Dashboard</a>
+        <a href="../historico/historico.html">Histórico</a>
+        <a href="../relatorio/relatorio.html">Relatório</a>
+        <a href="../fazer_registro/registro.html">Fazer Registro</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="registro-header">
+        <div>
+          <span class="page-badge">Novo Registro</span>
+          <h1>Registro de Acidente</h1>
+          <p>
+            Cadastre a ocorrência para alimentar indicadores, histórico e
+            relatórios preventivos.
+          </p>
+        </div>
+
+        <div class="status-card">
+          <span>Status</span>
+          <strong>Em preenchimento</strong>
+        </div>
+      </header>
+
+      <form class="registro-container">
+        <section class="form-area">
+          <div class="form-card">
+            <h2>Dados da ocorrência</h2>
+
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Data do acidente</label>
+                <input type="date" />
+              </div>
+
+              <div class="input-group">
+                <label>Hora</label>
+                <input type="time" />
+              </div>
+
+              <div class="input-group">
+                <label>Tipo de acidente</label>
+                <select>
+                  <option>Selecione</option>
+                  <option>Com afastamento</option>
+                  <option>Sem afastamento</option>
+                  <option>Incidente</option>
+                  <option>Quase acidente</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label>Gravidade</label>
+                <select>
+                  <option>Baixa</option>
+                  <option>Média</option>
+                  <option>Alta</option>
+                  <option>Fatalidade</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Dados do trabalhador</h2>
+
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Nome</label>
+                <input type="text" placeholder="Ex: João da Silva" />
+              </div>
+
+              <div class="input-group">
+                <label>Função</label>
+                <input type="text" placeholder="Ex: Operador" />
+              </div>
+
+              <div class="input-group">
+                <label>Setor</label>
+                <input type="text" placeholder="Ex: Produção" />
+              </div>
+
+              <div class="input-group">
+                <label>Empresa</label>
+                <input type="text" placeholder="Ex: Serra Morena" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Local e agente causador</h2>
+
+            <div class="form-grid">
+              <div class="input-group">
+                <label>Área</label>
+                <select>
+                  <option>Selecione</option>
+                  <option>Produção</option>
+                  <option>Manutenção</option>
+                  <option>Expedição</option>
+                  <option>Almoxarifado</option>
+                  <option>Administrativo</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label>Agente causador</label>
+                <input
+                  type="text"
+                  placeholder="Ex: Prensa, piso molhado, escada..."
+                />
+              </div>
+
+              <div class="input-group full">
+                <label>Local exato</label>
+                <input
+                  type="text"
+                  placeholder="Ex: Galpão 02, próximo à linha de produção"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Parte do corpo atingida</h2>
+
+            <div class="body-options">
+              <label><input type="checkbox" /> Cabeça</label>
+              <label><input type="checkbox" /> Olho</label>
+              <label><input type="checkbox" /> Ombro</label>
+              <label><input type="checkbox" /> Braço</label>
+              <label><input type="checkbox" /> Mão / Punho</label>
+              <label><input type="checkbox" /> Coluna</label>
+              <label><input type="checkbox" /> Tronco</label>
+              <label><input type="checkbox" /> Quadril</label>
+              <label><input type="checkbox" /> Coxa</label>
+              <label><input type="checkbox" /> Joelho</label>
+              <label><input type="checkbox" /> Perna</label>
+              <label><input type="checkbox" /> Pé / Tornozelo</label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Descrição da ocorrência</h2>
+
+            <div class="input-group">
+              <label>Relato do acidente</label>
+              <textarea
+                placeholder="Descreva o que aconteceu, como aconteceu e quais foram as condições observadas..."
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <label>Ação imediata tomada</label>
+              <textarea
+                placeholder="Ex: Encaminhado ao ambulatório, isolamento da área, orientação da equipe..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h2>Evidências</h2>
+
+            <label class="upload-box">
+              <input type="file" multiple />
+              <span>📎 Clique para anexar fotos ou documentos</span>
+              <small>PNG, JPG ou PDF</small>
+            </label>
+          </div>
+        </section>
+
+        <aside class="preview-area">
+          <div class="preview-card">
+            <h3>Resumo do registro</h3>
+
+            <div class="preview-item">
+              <span>Classificação</span>
+              <strong>Não definida</strong>
+            </div>
+
+            <div class="preview-item">
+              <span>Gravidade</span>
+              <strong>Não definida</strong>
+            </div>
+
+            <div class="preview-item">
+              <span>Setor</span>
+              <strong>Aguardando</strong>
+            </div>
+
+            <div class="risk-level">
+              <span>Nível de atenção</span>
+              <div class="risk-bar">
+                <b></b>
+              </div>
+              <small>Preencha os dados para análise</small>
+            </div>
+          </div>
+
+          <div class="action-card">
+            <button type="submit" class="btn-primary">Salvar Registro</button>
+            <button type="button" class="btn-secondary">Gerar Relatório</button>
+            <button type="reset" class="btn-danger">Limpar Campos</button>
+          </div>
+        </aside>
+      </form>
+    </main>
+  </body>
+</html>

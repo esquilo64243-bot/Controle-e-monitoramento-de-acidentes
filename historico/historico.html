@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGMA SMS | Histórico de Acidentes</title>
+    <link rel="stylesheet" href="./historico.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>SIGMA</h2>
+        <span>SMS</span>
+      </div>
+
+      <nav class="menu">
+        <a href="../index.html" class="active">Dashboard</a>
+        <a href="../historico/historico.html">Histórico</a>
+        <a href="../relatorio/relatorio.html">Relatório</a>
+        <a href="../fazer_registro/registro.html">Fazer Registro</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <span class="page-badge">Banco de ocorrências</span>
+          <h1>Histórico de Acidentes</h1>
+          <p>
+            Consulte registros, filtre ocorrências e acompanhe a evolução dos
+            eventos.
+          </p>
+        </div>
+
+        <a href="./registro-acidente.html" class="new-btn">+ Novo Registro</a>
+      </header>
+
+      <section class="filter-card">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Pesquisar por trabalhador, setor, agente causador..."
+          />
+          <button>Buscar</button>
+        </div>
+
+        <div class="filters">
+          <select>
+            <option>Ano</option>
+            <option>2026</option>
+            <option>2025</option>
+          </select>
+
+          <select>
+            <option>Mês</option>
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+          </select>
+
+          <select>
+            <option>Empresa</option>
+            <option>Serra Morena</option>
+            <option>AGM</option>
+            <option>AGM Florestal</option>
+          </select>
+
+          <select>
+            <option>Setor</option>
+            <option>Produção</option>
+            <option>Manutenção</option>
+            <option>Expedição</option>
+            <option>Administrativo</option>
+          </select>
+
+          <select>
+            <option>Tipo</option>
+            <option>Com afastamento</option>
+            <option>Sem afastamento</option>
+            <option>Incidente</option>
+            <option>Quase acidente</option>
+          </select>
+
+          <select>
+            <option>Gravidade</option>
+            <option>Baixa</option>
+            <option>Média</option>
+            <option>Alta</option>
+            <option>Fatalidade</option>
+          </select>
+
+          <button class="clear-btn">Limpar filtros</button>
+        </div>
+      </section>
+
+      <section class="summary-cards">
+        <div class="summary-card">
+          <span>Total de registros</span>
+          <strong>188</strong>
+        </div>
+
+        <div class="summary-card orange">
+          <span>Com afastamento</span>
+          <strong>73</strong>
+        </div>
+
+        <div class="summary-card yellow">
+          <span>Sem afastamento</span>
+          <strong>112</strong>
+        </div>
+
+        <div class="summary-card red">
+          <span>Fatalidades</span>
+          <strong>3</strong>
+        </div>
+      </section>
+
+      <section class="historico-layout">
+        <div class="timeline-box">
+          <h2>Linha do tempo</h2>
+
+          <div class="timeline-year">2026</div>
+
+          <div class="timeline-month active">
+            <span>Junho</span>
+            <strong>14 registros</strong>
+          </div>
+
+          <div class="timeline-month">
+            <span>Maio</span>
+            <strong>9 registros</strong>
+          </div>
+
+          <div class="timeline-month">
+            <span>Abril</span>
+            <strong>11 registros</strong>
+          </div>
+
+          <div class="timeline-month">
+            <span>Março</span>
+            <strong>7 registros</strong>
+          </div>
+        </div>
+
+        <div class="records-list">
+          <article class="record-card high">
+            <div class="record-top">
+              <div>
+                <span class="record-date">15/06/2026 • 14:30</span>
+                <h3>João da Silva</h3>
+                <p>Produção • Serra Morena</p>
+              </div>
+
+              <span class="tag red">Com afastamento</span>
+            </div>
+
+            <div class="record-info">
+              <div>
+                <span>Agente causador</span>
+                <strong>Prensa hidráulica</strong>
+              </div>
+
+              <div>
+                <span>Parte atingida</span>
+                <strong>Mão / Punho</strong>
+              </div>
+
+              <div>
+                <span>Gravidade</span>
+                <strong>Alta</strong>
+              </div>
+            </div>
+
+            <p class="record-desc">
+              Trabalhador sofreu lesão durante atividade operacional próximo à
+              linha de produção.
+            </p>
+
+            <div class="record-actions">
+              <button>Visualizar</button>
+              <button>Editar</button>
+              <button>PDF</button>
+              <button class="delete">Excluir</button>
+            </div>
+          </article>
+
+          <article class="record-card medium">
+            <div class="record-top">
+              <div>
+                <span class="record-date">11/06/2026 • 08:10</span>
+                <h3>Carlos Souza</h3>
+                <p>Manutenção • AGM</p>
+              </div>
+
+              <span class="tag yellow">Sem afastamento</span>
+            </div>
+
+            <div class="record-info">
+              <div>
+                <span>Agente causador</span>
+                <strong>Piso molhado</strong>
+              </div>
+
+              <div>
+                <span>Parte atingida</span>
+                <strong>Joelho</strong>
+              </div>
+
+              <div>
+                <span>Gravidade</span>
+                <strong>Média</strong>
+              </div>
+            </div>
+
+            <p class="record-desc">
+              Escorregamento em área de circulação após atividade de limpeza.
+            </p>
+
+            <div class="record-actions">
+              <button>Visualizar</button>
+              <button>Editar</button>
+              <button>PDF</button>
+              <button class="delete">Excluir</button>
+            </div>
+          </article>
+
+          <article class="record-card low">
+            <div class="record-top">
+              <div>
+                <span class="record-date">04/06/2026 • 16:45</span>
+                <h3>Marcos Lima</h3>
+                <p>Expedição • Serra Morena</p>
+              </div>
+
+              <span class="tag blue">Quase acidente</span>
+            </div>
+
+            <div class="record-info">
+              <div>
+                <span>Agente causador</span>
+                <strong>Empilhadeira</strong>
+              </div>
+
+              <div>
+                <span>Parte atingida</span>
+                <strong>Não houve lesão</strong>
+              </div>
+
+              <div>
+                <span>Gravidade</span>
+                <strong>Baixa</strong>
+              </div>
+            </div>
+
+            <p class="record-desc">
+              Situação de risco identificada durante movimentação de carga.
+            </p>
+
+            <div class="record-actions">
+              <button>Visualizar</button>
+              <button>Editar</button>
+              <button>PDF</button>
+              <button class="delete">Excluir</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

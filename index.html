@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGMA SMS | Indicadores de Acidentes</title>
+
+    <link rel="stylesheet" href="./dashbord/acidentes.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>SIGMA</h2>
+        <span>SMS</span>
+      </div>
+
+      <nav class="menu">
+        <a href="../index.html" class="active">Dashboard</a>
+        <a href="../historico/historico.html">Histórico</a>
+        <a href="../relatorio/relatorio.html">Relatório</a>
+        <a href="../fazer_registro/registro.html">Fazer Registro</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-header">
+        <div>
+          <h1>Indicadores de Acidentes</h1>
+          <p>Transformando dados em prevenção</p>
+        </div>
+
+        <div class="last-accident">
+          <span>Último acidente</span>
+          <strong>26/12/2025</strong>
+          <small>170 dias sem acidente com afastamento</small>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <span>Total de acidentes</span>
+          <h2>188</h2>
+        </div>
+
+        <div class="card">
+          <span>Com afastamento</span>
+          <h2>73</h2>
+          <small>38,8%</small>
+        </div>
+
+        <div class="card">
+          <span>Sem afastamento</span>
+          <h2>112</h2>
+          <small>59,6%</small>
+        </div>
+
+        <div class="card danger">
+          <span>Fatalidade</span>
+          <h2>3</h2>
+          <small>1,6%</small>
+        </div>
+
+        <div class="card">
+          <span>Taxa frequência</span>
+          <h2>2,14</h2>
+          <small>Meta 1,50</small>
+        </div>
+
+        <div class="card">
+          <span>Taxa gravidade</span>
+          <h2>543</h2>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="box large">
+          <h3>Acidente por mês</h3>
+
+          <div class="fake-chart bars">
+            <div style="height: 70%"></div>
+            <div style="height: 40%"></div>
+            <div style="height: 85%"></div>
+            <div style="height: 60%"></div>
+            <div style="height: 90%"></div>
+            <div style="height: 50%"></div>
+            <div style="height: 55%"></div>
+            <div style="height: 75%"></div>
+            <div style="height: 100%"></div>
+            <div style="height: 95%"></div>
+            <div style="height: 80%"></div>
+            <div style="height: 35%"></div>
+          </div>
+
+          <div class="months">
+            <span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span>
+            <span>MAI</span><span>JUN</span><span>JUL</span><span>AGO</span>
+            <span>SET</span><span>OUT</span><span>NOV</span><span>DEZ</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Distribuição por área</h3>
+
+          <div class="progress-list">
+            <div>
+              <span>Produção</span>
+              <div><b style="width: 90%"></b></div>
+              <small>26,6%</small>
+            </div>
+            <div>
+              <span>Manutenção</span>
+              <div><b style="width: 75%"></b></div>
+              <small>20,7%</small>
+            </div>
+            <div>
+              <span>Expedição</span>
+              <div><b style="width: 50%"></b></div>
+              <small>13,3%</small>
+            </div>
+            <div>
+              <span>Almoxarifado</span>
+              <div><b style="width: 45%"></b></div>
+              <small>12,8%</small>
+            </div>
+            <div>
+              <span>Obras</span>
+              <div><b style="width: 30%"></b></div>
+              <small>7,4%</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="box body-box">
+          <h3>Parte do corpo atingida</h3>
+
+          <div class="body-content">
+            <div class="human-placeholder">👤</div>
+
+            <div class="body-list">
+              <p>Cabeça <span>11%</span></p>
+              <p>Olho <span>4%</span></p>
+              <p>Ombro <span>13%</span></p>
+              <p>Braço <span>13%</span></p>
+              <p>Mão / Punho <span>16%</span></p>
+              <p>Coluna <span>11%</span></p>
+              <p>Joelho <span>10%</span></p>
+              <p>Pé / Tornozelo <span>7%</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Principais agentes causadores</h3>
+
+          <div class="progress-list">
+            <div>
+              <span>Prensa</span>
+              <div><b style="width: 95%"></b></div>
+              <small>13,3%</small>
+            </div>
+            <div>
+              <span>Piso molhado</span>
+              <div><b style="width: 85%"></b></div>
+              <small>12,2%</small>
+            </div>
+            <div>
+              <span>Escada portátil</span>
+              <div><b style="width: 82%"></b></div>
+              <small>12,2%</small>
+            </div>
+            <div>
+              <span>Esmerilhadeira</span>
+              <div><b style="width: 65%"></b></div>
+              <small>10,6%</small>
+            </div>
+            <div>
+              <span>Cabo elétrico</span>
+              <div><b style="width: 55%"></b></div>
+              <small>10,1%</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="box opportunities">
+          <h3>Principais oportunidades de prevenção</h3>
+
+          <p>
+            💡 Os acidentes com afastamento representam parte importante das
+            ocorrências.
+          </p>
+          <p>💡 A área de Produção concentra o maior volume de registros.</p>
+          <p>
+            💡 Priorizar ações de controle em máquinas, ferramentas e pisos.
+          </p>
+
+          <strong
+            >🔴 Acima da meta. Oportunidade para fortalecer a prevenção.</strong
+          >
+        </div>
+      </section>
+
+      <footer class="footer-alert">
+        🏆 São 170 dias sem acidentes com afastamento. Resultado representa
+        pessoas protegidas.
+      </footer>
+    </main>
+  </body>
+</html>

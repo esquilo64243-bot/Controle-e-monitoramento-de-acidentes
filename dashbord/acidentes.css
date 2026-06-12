@@ -1,0 +1,396 @@
+/* ==============================
+   RESET / BASE
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #061421;
+  color: #f5f7fa;
+  display: flex;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #062235, #020b12);
+  padding: 28px 20px;
+  border-right: 1px solid rgba(0, 174, 255, 0.18);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo h2 {
+  color: #1db7ff;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #9be7ff;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.menu {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu a {
+  color: #d8eef8;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(0, 180, 216, 0.25);
+}
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+============================== */
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 28px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.top-header h1 {
+  font-size: 34px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.top-header p {
+  color: #5ddcff;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.last-accident {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 180, 216, 0.25);
+  padding: 16px 20px;
+  border-radius: 18px;
+  text-align: right;
+}
+
+.last-accident span,
+.last-accident small {
+  display: block;
+  color: #b9dce8;
+  font-size: 13px;
+}
+
+.last-accident strong {
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  margin: 4px 0;
+}
+
+/* ==============================
+   CARDS INDICADORES
+============================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.card {
+  background: #ffffff;
+  color: #0b2535;
+  border-radius: 18px;
+  padding: 20px;
+  min-height: 125px;
+  border-bottom: 5px solid #00b4d8;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #345;
+}
+
+.card h2 {
+  font-size: 32px;
+  margin-top: 12px;
+  color: #062235;
+}
+
+.card small {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.card.danger {
+  border-bottom-color: #d00000;
+}
+
+.card.danger h2 {
+  color: #d00000;
+}
+
+/* ==============================
+   GRID DASHBOARD
+============================== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 18px;
+}
+
+.box {
+  background: #ffffff;
+  color: #0b2535;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.box h3 {
+  color: #062235;
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.large {
+  grid-column: span 1;
+}
+
+/* ==============================
+   GRÁFICO FAKE DE BARRAS
+============================== */
+.fake-chart.bars {
+  height: 230px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+  border-left: 2px solid #d7e4ea;
+  border-bottom: 2px solid #d7e4ea;
+  padding: 12px 12px 0;
+}
+
+.fake-chart.bars div {
+  width: 100%;
+  background: linear-gradient(180deg, #00b4d8, #005f8f);
+  border-radius: 10px 10px 0 0;
+  animation: subirBarra 0.9s ease forwards;
+}
+
+@keyframes subirBarra {
+  from {
+    height: 0;
+  }
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.months span {
+  font-size: 11px;
+  text-align: center;
+  color: #567;
+  font-weight: bold;
+}
+
+/* ==============================
+   BARRAS HORIZONTAIS
+============================== */
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.progress-list div {
+  display: grid;
+  grid-template-columns: 105px 1fr 45px;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-list span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.progress-list div div {
+  display: block;
+  height: 12px;
+  background: #e7f1f5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-list b {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  border-radius: 999px;
+}
+
+.progress-list small {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* ==============================
+   CORPO ATINGIDO
+============================== */
+.body-box {
+  grid-row: span 2;
+}
+
+.body-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.human-placeholder {
+  width: 130px;
+  height: 260px;
+  background: linear-gradient(180deg, #eaf6fb, #cfdde5);
+  border-radius: 70px;
+  display: grid;
+  place-items: center;
+  font-size: 80px;
+  opacity: 0.8;
+}
+
+.body-list {
+  flex: 1;
+}
+
+.body-list p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dce8ee;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.body-list span {
+  color: #0077b6;
+}
+
+/* ==============================
+   OPORTUNIDADES
+============================== */
+.opportunities p {
+  margin-bottom: 14px;
+  line-height: 1.5;
+  color: #334;
+}
+
+.opportunities strong {
+  display: block;
+  margin-top: 18px;
+  color: #d00000;
+}
+
+/* ==============================
+   RODAPÉ ALERTA
+============================== */
+.footer-alert {
+  margin-top: 20px;
+  background: rgba(0, 180, 216, 0.12);
+  border: 1px solid rgba(0, 180, 216, 0.35);
+  color: #bff3ff;
+  padding: 16px 20px;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+/* ==============================
+   RESPONSIVO
+============================== */
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .body-box {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+  }
+
+  .menu {
+    flex-direction: row;
+    overflow-x: auto;
+    margin-top: 25px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 18px;
+  }
+
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cards,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-header h1 {
+    font-size: 26px;
+  }
+}

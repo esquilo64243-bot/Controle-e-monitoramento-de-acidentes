@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGMA SMS | Relatório de Acidentes</title>
+    <link rel="stylesheet" href="./relatorio.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>SIGMA</h2>
+        <span>SMS</span>
+      </div>
+
+      <nav class="menu">
+        <a href="../index.html" class="active">Dashboard</a>
+        <a href="../historico/historico.html">Histórico</a>
+        <a href="../relatorio/relatorio.html">Relatório</a>
+        <a href="../fazer_registro/registro.html">Fazer Registro</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <span class="page-badge">Relatório gerencial</span>
+          <h1>Relatório de Acidentes</h1>
+          <p>
+            Gere análises consolidadas para acompanhamento, auditorias e planos
+            de ação.
+          </p>
+        </div>
+
+        <div class="header-actions">
+          <button class="btn-outline">Pré-visualizar</button>
+          <button class="btn-primary">Gerar PDF</button>
+        </div>
+      </header>
+
+      <section class="report-filters">
+        <h2>Configuração do relatório</h2>
+
+        <div class="filters-grid">
+          <div class="input-group">
+            <label>Período inicial</label>
+            <input type="date" />
+          </div>
+
+          <div class="input-group">
+            <label>Período final</label>
+            <input type="date" />
+          </div>
+
+          <div class="input-group">
+            <label>Empresa</label>
+            <select>
+              <option>Todas</option>
+              <option>Serra Morena</option>
+              <option>AGM</option>
+              <option>AGM Florestal</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label>Setor</label>
+            <select>
+              <option>Todos</option>
+              <option>Produção</option>
+              <option>Manutenção</option>
+              <option>Expedição</option>
+              <option>Administrativo</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label>Tipo</label>
+            <select>
+              <option>Todos</option>
+              <option>Com afastamento</option>
+              <option>Sem afastamento</option>
+              <option>Incidente</option>
+              <option>Quase acidente</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label>Modelo</label>
+            <select>
+              <option>Relatório completo</option>
+              <option>Resumo executivo</option>
+              <option>Relatório por setor</option>
+              <option>Relatório mensal</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="report-layout">
+        <div class="report-preview">
+          <div class="document-page">
+            <div class="document-top">
+              <div>
+                <h2>SIGMA SMS</h2>
+                <p>Relatório Gerencial de Acidentes</p>
+              </div>
+
+              <div class="doc-code">
+                <span>DOC-SMS-ACD</span>
+                <strong>2026</strong>
+              </div>
+            </div>
+
+            <div class="document-title">
+              <h1>Relatório de Indicadores de Acidentes</h1>
+              <p>Período analisado: Janeiro/2026 a Junho/2026</p>
+            </div>
+
+            <div class="doc-summary">
+              <div>
+                <span>Total</span>
+                <strong>188</strong>
+              </div>
+
+              <div>
+                <span>Com afastamento</span>
+                <strong>73</strong>
+              </div>
+
+              <div>
+                <span>Sem afastamento</span>
+                <strong>112</strong>
+              </div>
+
+              <div>
+                <span>Fatalidades</span>
+                <strong>3</strong>
+              </div>
+            </div>
+
+            <div class="doc-section">
+              <h3>1. Resumo executivo</h3>
+              <p>
+                No período analisado, foram registrados 188 eventos relacionados
+                à segurança do trabalho. Os dados indicam maior concentração de
+                ocorrências na área de produção, com destaque para acidentes
+                envolvendo máquinas, ferramentas e condições de piso.
+              </p>
+            </div>
+
+            <div class="doc-section">
+              <h3>2. Indicadores principais</h3>
+
+              <div class="mini-chart">
+                <div style="height: 65%"></div>
+                <div style="height: 40%"></div>
+                <div style="height: 80%"></div>
+                <div style="height: 55%"></div>
+                <div style="height: 92%"></div>
+                <div style="height: 70%"></div>
+              </div>
+            </div>
+
+            <div class="doc-section">
+              <h3>3. Principais causas identificadas</h3>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Agente causador</th>
+                    <th>Ocorrências</th>
+                    <th>Percentual</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Prensa hidráulica</td>
+                    <td>25</td>
+                    <td>13,3%</td>
+                  </tr>
+
+                  <tr>
+                    <td>Piso molhado</td>
+                    <td>23</td>
+                    <td>12,2%</td>
+                  </tr>
+
+                  <tr>
+                    <td>Escada portátil</td>
+                    <td>23</td>
+                    <td>12,2%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="doc-section">
+              <h3>4. Recomendações preventivas</h3>
+              <ul>
+                <li>Reforçar inspeções em máquinas e equipamentos críticos.</li>
+                <li>
+                  Intensificar DDS sobre percepção de risco e bloqueio de
+                  energia.
+                </li>
+                <li>Monitorar reincidências por setor e agente causador.</li>
+                <li>
+                  Criar plano de ação para áreas com maior índice de
+                  ocorrências.
+                </li>
+              </ul>
+            </div>
+
+            <div class="doc-footer">
+              <span>Gerado automaticamente pelo SIGMA SMS</span>
+              <span>Página 1 de 1</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="report-side">
+          <div class="side-card">
+            <h3>Itens do relatório</h3>
+
+            <label><input type="checkbox" checked /> Resumo executivo</label>
+            <label
+              ><input type="checkbox" checked /> Indicadores principais</label
+            >
+            <label><input type="checkbox" checked /> Gráficos</label>
+            <label><input type="checkbox" checked /> Tabela de causas</label>
+            <label><input type="checkbox" checked /> Recomendações</label>
+            <label><input type="checkbox" /> Lista completa de registros</label>
+            <label><input type="checkbox" /> Evidências anexadas</label>
+          </div>
+
+          <div class="side-card">
+            <h3>Diagnóstico automático</h3>
+
+            <div class="diagnostic danger">
+              <span>⚠️ Atenção</span>
+              <p>Taxa de frequência acima da meta definida.</p>
+            </div>
+
+            <div class="diagnostic info">
+              <span>💡 Oportunidade</span>
+              <p>Produção concentra a maior quantidade de ocorrências.</p>
+            </div>
+
+            <div class="diagnostic success">
+              <span>✅ Destaque</span>
+              <p>170 dias sem acidente com afastamento.</p>
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h3>Ações rápidas</h3>
+
+            <button class="btn-primary full">Gerar PDF</button>
+            <button class="btn-outline full">Exportar Excel</button>
+            <button class="btn-outline full">Enviar por e-mail</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
